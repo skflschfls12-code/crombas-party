@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+    <name>Lovely Planner</name>
+    <version>1.0</version>
+    <description><![CDATA[다꾸 플래너 감성의 귀여운 썸네일형 스킨입니다. 마스킹테이프, 리본 스티커, 아치형 썸네일, 플래너 위젯 사이드바를 담았어요.]]></description>
+    <license><![CDATA[자유롭게 수정해서 사용할 수 있습니다.]]></license>
+  </information>
+  <author>
+    <name>Lovely Planner</name>
+    <homepage></homepage>
+    <email></email>
+  </author>
+  <default>
+    <recentEntries>5</recentEntries>
+    <recentComments>5</recentComments>
+    <recentTrackbacks>5</recentTrackbacks>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <tagsInCloud>20</tagsInCloud>
+    <sortInCloud>3</sortInCloud>
+    <expandComment>1</expandComment>
+    <expandTrackback>0</expandTrackback>
+    <lengthOfRecentNotice>25</lengthOfRecentNotice>
+    <lengthOfRecentEntry>27</lengthOfRecentEntry>
+    <lengthOfRecentComment>30</lengthOfRecentComment>
+    <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+    <lengthOfLink>30</lengthOfLink>
+    <entriesOnPage>10</entriesOnPage>
+    <entriesOnList>10</entriesOnList>
+    <showListOnCategory>1</showListOnCategory>
+    <showListOnArchive>1</showListOnArchive>
+    <commentMessage>
+      <none>댓글이 없습니다.</none>
+      <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt; 달렸습니다.</single>
+    </commentMessage>
+    <trackbackMessage>
+      <none>받은 트랙백이 없고</none>
+      <single>트랙백이 &lt;span class="cnt"&gt;하나&lt;/span&gt;이고</single>
+    </trackbackMessage>
+    <tree>
+      <color>5b3c46</color>
+      <bgColor>fffdfb</bgColor>
+      <activeColor>c75a78</activeColor>
+      <activeBgColor>fde4ea</activeBgColor>
+      <labelLength>27</labelLength>
+      <showValue>1</showValue>
+    </tree>
+    <contentWidth>760</contentWidth>
+    <cover><![CDATA[[{"name":"notice","title":"NOTICE BOARD","dataType":"RECENT","data":{"category":"NOTICE","size":1}}]]]></cover>
+  </default>
+  <cover>
+    <item>
+      <name>notice</name>
+      <label><![CDATA[공지 보드]]></label>
+      <description><![CDATA[홈 첫 화면에 공지사항 본문 전체를 펼쳐서 보여줍니다. 내용 유형에서 '최신 글 > 공지사항'을 선택하세요.]]></description>
+    </item>
+  </cover>
+  <variables>
+    <variablegroup name="디자인">
+      <variable>
+        <name>point-color</name>
+        <label><![CDATA[포인트 컬러]]></label>
+        <description><![CDATA[스킨 전체의 핑크 계열 색을 바꿉니다. 연한 색들은 이 색에서 자동으로 만들어져요.]]></description>
+        <type>COLOR</type>
+        <option />
+        <default><![CDATA[#e891a8]]></default>
+      </variable>
+      <variable>
+        <name>grid-cols</name>
+        <label><![CDATA[목록 열 개수]]></label>
+        <description><![CDATA[썸네일 카드 목록을 한 줄에 몇 개씩 보여줄지 정합니다.]]></description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"2", "label":"2열", "value":"2"},
+            {"name":"3", "label":"3열", "value":"3"}
+          ]
+        ]]></option>
+        <default>3</default>
+      </variable>
+      <variable>
+        <name>show-stickers</name>
+        <label><![CDATA[스티커 표시]]></label>
+        <description><![CDATA[리본, 하트, 꽃 같은 장식 스티커를 보여줍니다.]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>true</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="효과">
+      <variable>
+        <name>page-effect</name>
+        <label><![CDATA[페이지 이동 효과]]></label>
+        <description><![CDATA[페이지를 옮길 때 화면이 뿌옇게 흐려졌다가 다시 선명해집니다.]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>custom-cursor</name>
+        <label><![CDATA[커서 (Kiss Me Sweethearts)]]></label>
+        <description><![CDATA[마우스 커서를 Kiss Me Sweethearts 커서로 바꿉니다. (cursors-4u.com)]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>cursor-image</name>
+        <label><![CDATA[커서 이미지 (선택)]]></label>
+        <description><![CDATA[직접 만든 커서를 쓰려면 올려주세요. 32×32px PNG를 추천해요. 이미지의 왼쪽 위 끝이 클릭 위치예요.]]></description>
+        <type>IMAGE</type>
+        <option />
+        <default />
+      </variable>
+      <variable>
+        <name>cursor-link-image</name>
+        <label><![CDATA[링크 위 커서 이미지 (선택)]]></label>
+        <description><![CDATA[링크나 버튼 위에 올렸을 때 쓸 커서입니다. 32×32px PNG를 추천해요.]]></description>
+        <type>IMAGE</type>
+        <option />
+        <default />
+      </variable>
+    </variablegroup>
+    <variablegroup name="반짝이">
+      <variable>
+        <name>sparkle</name>
+        <label><![CDATA[마우스 반짝이]]></label>
+        <description><![CDATA[마우스를 움직이면 작은 별이 반짝이며 떨어집니다. (Tinkerbell Magic Sparkle by mf2fm)]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>sparkle-color</name>
+        <label><![CDATA[반짝이 색]]></label>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"random", "label":"알록달록 랜덤", "value":"random"},
+            {"name":"pink", "label":"핑크 한 가지", "value":"pink"}
+          ]
+        ]]></option>
+        <default>random</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="배경음악">
+      <variable>
+        <name>bgm-url</name>
+        <label><![CDATA[음악 파일 주소 (mp3)]]></label>
+        <description><![CDATA[mp3 파일 주소를 넣으면 오른쪽 아래에 재생 버튼이 생깁니다. 비워두면 표시되지 않아요.]]></description>
+        <type>STRING</type>
+        <option />
+        <default />
+      </variable>
+      <variable>
+        <name>bgm-autoplay</name>
+        <label><![CDATA[첫 클릭에 자동 재생]]></label>
+        <description><![CDATA[브라우저 정책상 소리는 바로 재생될 수 없어서, 방문자가 화면을 처음 클릭할 때 음악이 시작됩니다.]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>false</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="보호">
+      <variable>
+        <name>no-search</name>
+        <label><![CDATA[검색 노출 막기]]></label>
+        <description><![CDATA[구글, 네이버 등 검색엔진에 블로그가 노출되지 않도록 요청합니다.]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>no-drag</name>
+        <label><![CDATA[드래그 금지]]></label>
+        <description><![CDATA[글자 드래그(선택)와 이미지 끌기를 막습니다. 검색창과 댓글 입력은 그대로 쓸 수 있어요.]]></description>
+        <type>BOOL</type>
+        <option />
+        <default>true</default>
+      </variable>
+    </variablegroup>
+  </variables>
+</skin>
